@@ -1,0 +1,7 @@
+.container{
+    width: 500px;
+    height: 500px;
+    background:blue;
+    margin: 0 auto;
+    transition: all 0.1s;
+}
