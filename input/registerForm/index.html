@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Form</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Mukta&display=swap" rel="stylesheet">
+    <script src="index.js" defer></script>
+</head>
+<body>
+    <div class="container__signUp">
+      <div class="container__wrapper">
+        <div class="container__header">
+           <h2>Create your account</h2>
+            
+        </div>
+        <form name='signUp'>
+            <label for="firstN">First Name</label>
+            <input id="firstN" name="fName" type="text" placeholder="type here...">
+            
+            <label for="secondN">Second Name</label>
+            <input type="text" name="secondN" id="secondN" placeholder="type here...">
+
+            <label for="emailAdr">Email Adress</label>
+            <input type="email" name="emailAdress" id="emailAdr" required placeholder="type here...">
+
+           
+           <div class="radioBtn">
+            <input type="radio" name="gender" id="male" value="male">
+            <label for="male">man</label>
+
+            
+            <input type="radio" name="gender" id="female" value="female">
+            <label for="female">women</label>
+           </div>
+
+            <div class="selectForm">
+                <label for="position">Position</label>
+            <select name="positionSelect" id="position" placeholder="Choose...">
+                    <option value="chose" selected>Choose...</option>
+                    <option value="FrontEnd">FrontEnd</option>
+                    <option value="BackEnd">BackEnd</option>
+                    <option value="QA/QC">QA/QC</option>
+            </select>
+            </div>
+
+           <div class="check">
+            <input type="checkbox" name="agree" id="requiredCheck" required>
+            <label for="requiredCheck">I agree all statement in Terms of service</label>
+           </div>
+
+           <button class="signUp" name="btnSign" type="submit">Sign Up</button>
+
+        </form>
+      </div>
+    </div>
+
+    <div class="container__signOut">
+        <div class="container__wrapper-out">
+            <div class="container__header">
+                <img class="gender" >
+            </div>
+            <div class="profile__info">
+                <div class="profile__name"> </div>
+                <div class="profile__email"></div>
+                <div class="profile__destination"></div>
+                <button type="submit" name="btnOut" class="signOut">Sign Out</button>
+            </div>
+
+         
+
+            <footer class="footer">
+              <div class="social">
+                <a href="#">
+                    <img src="./image/f.svg" alt="">
+                </a>
+                <a href="#">
+                    <img src="./image/git.svg" alt="">
+                </a>
+                <a href="#">
+                    <img src="./image/in.svg" alt="">
+                </a>
+              </div>
+            </footer>
+        </div>
+    </div>
+    
+</body>
+</html>
