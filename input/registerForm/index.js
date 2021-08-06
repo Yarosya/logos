@@ -9,11 +9,16 @@ let destination = document.querySelector('.profile__destination');
 
 signUp.btnSign.addEventListener('click', (event)=>{
     event.preventDefault();
-    nameProfile.innerHTML = signUp.fName.value + ' ' + signUp.secondN.value;
-    email.innerHTML = signUp.emailAdress.value ;
-    destination.innerHTML = signUp.positionSelect.value ;
+    let fullName = signUp.fName.value + ' ' + signUp.secondN.value;
+    let mailAdress = signUp.emailAdress.value;
+    let selectInp = signUp.positionSelect.value ;
+    nameProfile.innerHTML = fullName;
+    email.innerHTML = mailAdress ;
+    destination.innerHTML = selectInp;
+  
+
     signUp.gender.value== 'male' ? gender.src = "./image/man.png" : gender.src = "./image/women.png";
-    if(signUp.agree.checked){
+    if(signUp.agree.checked && fullName.length!=0 && mailAdress.length!=0){
         containerUp.style.display = 'none';
         containerOut.style.display = 'block';
     }

@@ -20,17 +20,17 @@
         </div>
         <form name='signUp'>
             <label for="firstN">First Name</label>
-            <input id="firstN" name="fName" type="text" placeholder="type here...">
+            <input id="firstN" name="fName" type="text" placeholder="type here..." required>
             
             <label for="secondN">Second Name</label>
-            <input type="text" name="secondN" id="secondN" placeholder="type here...">
+            <input type="text" name="secondN" id="secondN" placeholder="type here..." required>
 
             <label for="emailAdr">Email Adress</label>
-            <input type="email" name="emailAdress" id="emailAdr" required placeholder="type here...">
+            <input type="email" name="emailAdress" id="emailAdr" required placeholder="type here..." >
 
            
            <div class="radioBtn">
-            <input type="radio" name="gender" id="male" value="male">
+            <input type="radio" checked name="gender" id="male" value="male">
             <label for="male">man</label>
 
             
@@ -41,7 +41,6 @@
             <div class="selectForm">
                 <label for="position">Position</label>
             <select name="positionSelect" id="position" placeholder="Choose...">
-                    <option value="chose" selected>Choose...</option>
                     <option value="FrontEnd">FrontEnd</option>
                     <option value="BackEnd">BackEnd</option>
                     <option value="QA/QC">QA/QC</option>
