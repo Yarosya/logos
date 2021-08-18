@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TodoList</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <script src="./index.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <div class="todoList">
+            <h2>Список завдань</h2>
+            <div class="listItem">
+                
+
+            </div>
+        </div>
+        <div class="line">
+            <div class="innerLine"></div>
+        </div>
+
+        <div class="todoAdd">
+            <h2>Додати нове завдання</h2>
+          <form name="formAdd">
+            <input class="inputText" type="text" name="todoGoals">
+            <input class="btn" name="buttonAdd" type="submit" value="Додати">
+          </form>
+        </div>
+    </div>
+  
+    <div class="modal modalInput" data-modal="1">
+        <!--   Svg иконка для закрытия окна  -->
+        <svg class="modal__cross js-modal-close-input" xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 24 24"><path d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z"/></svg>
+        <h2 class="modal__title">Warning!!!</h2>
+        <p class="modal__title">Пусте поле не можна додати.</p>
+     </div>
+     
+     <div class="modal modalList" data-modal="2">
+        <!--   Svg иконка для закрытия окна  -->
+        <svg class="modal__cross js-modal-close-list" xmlns="http://www.w3.org/2000/svg"            
+        viewBox="0 0 24 24"><path d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z"/></svg>
+        <h2 class="modal__title">Warning!!!</h2>
+        <p class="modal__title">Останній таск зі списку Ви не можете видалити.</p>
+     </div>
+     
+     <!-- Подложка под модальным окном -->
+
+    
+</body>
+</html>

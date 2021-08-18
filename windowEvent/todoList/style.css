@@ -1,0 +1,162 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(./img/1.png);
+    background-repeat: no-repeat;
+    background-position: 200px 100px;
+    font-family: 'Anton', sans-serif;
+}
+
+.container{
+    padding-top: 50px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 790px;
+    border-radius: 15px;
+    border: 3px solid black;
+    display: flex;
+    justify-content:space-evenly; 
+    margin: 0 auto; 
+}
+.line{
+    display: flex;
+    justify-content: center; 
+    flex-direction: column;
+}
+.innerLine{
+    width: 2px;
+    height:350px;
+    background: #323941;
+}
+form>input{
+    display: block;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+.inputText{
+    border: none;
+    outline: none;
+    width: 250px;
+    border-bottom: 2px solid #323941;
+    font-size: 16px;
+    padding: 3px;
+}
+.btn{
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background-color: #323941;
+    color: white;
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 15px;
+}
+.itemWrapper{
+    
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 7px;
+    padding-top: 8px;
+}
+.itemBtn{
+    width: 20px;
+    height: 20px;
+    border:2px solid red;
+    margin-right: 10px;
+    border-radius: 50%;
+}
+.itemName{
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+.listItem{
+    max-width: 300px;
+}
+
+/* //modalWindows */
+
+
+.overlay {
+   
+    /* Скрываем подложку  */
+    opacity: 0;
+    visibility: hidden;
+    
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .5);
+    z-index: 20;
+    transition: .3s all;
+ }
+ 
+ 
+ /* Стили для модальных окон */
+ 
+ .modal {
+    /* Скрываем окна  */
+    opacity: 0;
+    visibility: hidden;
+    /*  Установаем ширину окна  */
+    width: 100%;
+    max-width: 500px;
+    /*  Центрируем и задаем z-index */
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 30; 
+    
+    /*  Побочные стили   */
+    box-shadow: 0 3px 10px -.5px rgba(0, 0, 0, .2); 
+    text-align: center;
+    padding: 30px;
+    border-radius: 3px;
+    background-color: #F8D6DA;
+    transition: 0.3s all;
+ }
+ 
+ 
+ /* Стили для активных классов подложки и окна */
+ 
+ .modalInput.active,
+ .overlay.active{
+    opacity: 1;
+    visibility: visible;
+ }
+ .modalList.active,
+ .overlay.active{
+    opacity: 1;
+    visibility: visible;
+ }
+ h2{
+     color:#844B49;
+ }
+ 
+ 
+ /* Стили для кнопки закрытия */
+ 
+ .modal__cross {
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    fill: #444;
+    cursor: pointer;
+ }
+ 
+ 
+
+ 
